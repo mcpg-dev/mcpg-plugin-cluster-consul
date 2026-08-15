@@ -1,0 +1,20 @@
+schema: mcpg.dev/plugin/v1
+id: dev.mcpg.cluster.consul
+name: Consul Cluster Coordinator
+license: BUSL-1.1
+description: |
+  HashiCorp Consul-backed cluster plugin.
+  Implements the pub/sub + peer-discovery surface (Consul catalog
+  + events) plus lease ops (acquire_leadership / acquire_lock with
+  renew / release / drop) via Consul Sessions + KV CAS for fencing
+  tokens. Satisfies MCPG's cluster needs: cluster-coordinated
+  credential cache, bundle-reload events, approval-resolution
+  pub/sub, and leader election / distributed locks.
+class: cluster
+runtime: native-cdylib-v1
+protocol_version: "1.0"
+required_capabilities:
+  - network_outbound
+provides:
+  - bus
+  - kv
