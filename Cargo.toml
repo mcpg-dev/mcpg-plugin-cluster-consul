@@ -1,6 +1,6 @@
 [package]
 name = "mcpg-plugin-cluster-consul"
-version = "0.1.0-alpha.19"
+version = "0.1.0-alpha.20"
 license = "BUSL-1.1"
 edition = "2024"
 description = "Consul cluster_backend plugin for MCPG gateway (dev.mcpg.cluster.consul)"
@@ -9,9 +9,9 @@ description = "Consul cluster_backend plugin for MCPG gateway (dev.mcpg.cluster.
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-mcpg-plugin-protocol = { git = "https://github.com/mcpg-dev/mcpg-plugin-protocol", tag = "v0.1.0-beta.17", version = "=0.1.0-beta.17" }
-mcpg-cluster-api = { git = "https://github.com/mcpg-dev/mcpg-cluster-api", tag = "v0.1.0-beta.17", version = "=0.1.0-beta.17" }
-mcpg-plugin-sdk = { git = "https://github.com/mcpg-dev/mcpg-plugin-sdk", tag = "v0.1.0-beta.17", version = "=0.1.0-beta.17", features = ["cluster-forward"] }
+mcpg-plugin-protocol = { git = "https://github.com/mcpg-dev/mcpg-plugin-protocol", tag = "v0.1.0-beta.18", version = "=0.1.0-beta.18" }
+mcpg-cluster-api = { git = "https://github.com/mcpg-dev/mcpg-cluster-api", tag = "v0.1.0-beta.18", version = "=0.1.0-beta.18" }
+mcpg-plugin-sdk = { git = "https://github.com/mcpg-dev/mcpg-plugin-sdk", tag = "v0.1.0-beta.18", version = "=0.1.0-beta.18", features = ["cluster-forward"] }
 async-trait = "0.1"
 base64 = "0.22"
 bytes = "1"
